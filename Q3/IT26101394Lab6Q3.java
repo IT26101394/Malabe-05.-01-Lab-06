@@ -13,15 +13,14 @@ public class IT26101394Lab6Q3 {
             System.out.print("Enter a number: ");
             int num = scanner.nextInt();
             
-            // Check for termination sentinel
+            
             if (num == -99) {
                 break;
             }
-            
-            // Validate for negative input (allowing positive numbers > 0, though problem statement says positive integers)
+        
             if (num < 0) {
                 System.out.println("Invalid input. Please enter a positive integer or -99 to terminate");
-                continue; // Skip processing invalid input
+                continue; 
             }
             
             sumOfSquares += (double) num * num;
